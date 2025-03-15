@@ -1,6 +1,7 @@
 import AOS from "aos";
 import "aos/dist/aos.css"
 import { useEffect, useState } from "react";
+import Navbar from "./components/Navbar";
 
 const App=()=>{
 const[popUp,setPopUp]=useState(false)
@@ -19,8 +20,8 @@ const handlePopUp=()=>{
   },[]);
 
   return(
-    <div className="bg-blue-300 dark:bg-gray-900ndark:text-white duration-200">
-      all
+    <div className="bg-blue-300 py-2 px-10 dark:bg-gray-900ndark:text-white duration-200">
+      <Navbar />
     </div>
   )
 } 
